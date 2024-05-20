@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+nav li a:hover {
+  color: #000000;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(
+    rgba(0, 8, 51, 0.9),
+    rgba(0, 8, 51, 0.9),
+  ), url("HomePage.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px);
+  margin-top: 10px;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #ff6f61;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar button img {
+  width: 25px;
+}
+/* Styles for recipe boxes */
+.recipe-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.recipe-box h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recipe-box p {
+  margin-bottom: 8px;
+}
+
+.recipe-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recipe-box a:hover {
+  text-decoration: underline;
+}
+
