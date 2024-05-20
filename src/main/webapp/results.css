@@ -1,0 +1,13 @@
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between recipe boxes as needed */
+}
+
+.recipe-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: Salmon; /* Set background color for the boxes */
+    width: calc(33.33% - 20px); /* Adjust the width of each box based on your layout */
+}
